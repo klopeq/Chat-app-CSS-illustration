@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-violet: hsl(276, 100%, 81%);
+    --moderate-violet: hsl(276, 55%, 52%);
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    --grayish-blue: hsl(206, 6%, 79%);
+    --very-dark-desatirated-violet: hsl(271, 36%, 24%);
+    --dark-grayish-violet: hsl(0, 7%, 86%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --very-light-magenta: hsl(289, 100%, 72%);
+         /* Gradients */
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet:  hsl(264, 100%, 61%);
+
+    /* /- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
+    - Moderate Violet (chat on the left): hsl(276, 55%, 52%)
+    - Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
+    - Grayish Blue (placeholder text): hsl(206, 6%, 79%)
+    - Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
+    - Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
+    
+    #### Gradients
+    
+    - Light Magenta: hsl(293, 100%, 63%)
+    - Light Violet: hsl(264, 100%, 61%)
+    
+    ### Secondary
+    
+    - White: hsl(0, 0%, 100%)
+    - Light Grayish Violet (app background): hsl(270, 20%, 96%)
+    - Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
+    - Very Light Magenta (radio button outline): hsl(289, 100%, 72%) */
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    overflow: hidden;
+    background-color: var(--light-grayish-violet);
+    overflow-y: auto;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.container #sec-1 {
+    display: flex;
+}
+
+.container .design {
+    border-radius: 0px 0px 1000px 1000px;
+    width: 35vw;
+    height: 95vh;
+    background-color: var(--moderate-violet);
+    transform: translateX(-30px);
+}
+
+.container .phone-design {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 2.7rem;
+    width: 350px;
+    height: 665px;
+    position: absolute;
+    right: 50%;
+    top: 10%;
+}
+
+.container .phone-design .phone-heading {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to left,  var(--light-magenta) , var(--light-violet));
+    border-radius: 30px 30px  0 0;
+    padding: 40px 10px 20px ;
+    align-items: center;
+    height: 70px;
+    position: relative;
+}
+
+.container .phone-design .phone-heading .heading-design {
+    height: 20px;
+    width: 120px;
+    background-color: #fff;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    top: 0;
+    left: 30%;
+    transform: rotate(180deg);
+    margin: 0 0 70px ;
+}
+
+.container .phone-design .phone-heading .icon-1 {
+    color: var(--light-grayish-violet);
+}
+
+.container .phone-design .phone-heading img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 10px 0 5px;
+    border: 1px solid #fff;
+}
+
+.container .phone-design .phone-heading .personal-info #name {
+    color: var(--light-grayish-violet);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container .phone-design .phone-heading .personal-info #status {
+    color: var(--grayish-blue);
+    margin-bottom: 3px;
+}
+
+.container .phone-design .phone-heading .icon-2 {
+    position: absolute;
+    right: 7%;
+    color: var(--light-grayish-violet);
+}
+
+.container .phone-design .phone-page {
+    background-color: var(--light-grayish-violet);
+    font-size: 14px;
+    padding: 10px;
+    height: 500px;
+}
+
+.container .phone-design .phone-page .first-msg .msg-1,
+.container .phone-design .phone-page .thirth-msg .message {
+    width: 200px;
+    background-color: var(--dark-grayish-violet);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--moderate-violet);
+}
+
+.container .phone-design .phone-page .second-msg {
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .phone-design .phone-page .second-msg .images {
+    text-align: right;
+}
+
+.container .phone-design .phone-page .second-msg .images img {
+    width: 60px;
+    border-radius: 25px;
+    transform: translate(-65px);
+}
+
+.container .phone-design .phone-page .second-msg .chating .chat {
+    width: 200px;
+    background-color: #fff;
+    color: var(--desaturated-dark-violet);
+    margin: 10px;
+    padding: 4px;
+    border-radius: 10px;
+    transform: translateX(80px);
+}
+
+.container .phone-design .phone-page .second-msg .chating .chat-2 {
+    width: 120px;
+    transform: translateX(155px);
+}
+
+.container .phone-design .phone-page .thirth-msg #box {
+    display: flex;
+    padding: 0 20px;
+    width: 250px;
+    height: 20px;
+    background: linear-gradient(to right,  var(--light-magenta) , var(--light-violet));
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 13px;
+    border-bottom-left-radius: 0;
+    color: var(--light-grayish-violet); 
+    position: relative;
+}
+
+.container .phone-design .phone-page .thirth-msg #box * {
+    transform: translateY(35%);
+}
+
+.container .phone-design .phone-page .thirth-msg #box i  {
+    margin-right: 20px;
+    border: 1px solid transparent;
+}
+
+.container .phone-design .phone-page .thirth-msg #box .duration {
+    font-weight: bold;
+}
+
+.container .phone-design .phone-page .thirth-msg #box .price {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.container .phone-design .phone-footer {
+    display: flex;
+    background-color: var(--light-grayish-violet);
+    height: auto;
+    padding: 0 10px 15px;
+    border-radius: 0 0 30px 30px;
+}
+
+.container .phone-design .phone-footer input {
+    position: relative;
+    background-color: #fff;
+    outline: none;
+    border: none; 
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.container .phone-design .phone-footer input::placeholder {
+    color: var(--grayish-blue);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container .phone-design .phone-footer i {
+    height: 40px;
+    background-color: var(--desaturated-dark-violet);
+    border-radius: 100%;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container .explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 500px;
+    transform: translateX(300px);
+}
+
+.container .explanation h2 {
+    font-size: 40px;
+    color: var(--very-dark-desaturated-violet);
+    margin: 20px 0;
+}
+
+.container .explanation p {
+    color: var(--grayish-blue);
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .design {
+        border-radius: 0 0 1000px 0;
+        transform: translateX(0);
+        width: 70vw;
+        height: 95vh;
+    }
+
+    .container .phone-design  {
+        position: absolute;
+        right: 0%;
+        top: 20%;
+        left: 30%;
+    }
+
+    .container .explanation {
+        transform: translate(0, 0px);
+    }
+}
+
+
+
