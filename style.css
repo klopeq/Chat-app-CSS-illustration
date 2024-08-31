@@ -19,25 +19,6 @@
          /* Gradients */
     --light-magenta: hsl(293, 100%, 63%);
     --light-violet:  hsl(264, 100%, 61%);
-
-    /* /- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
-    - Moderate Violet (chat on the left): hsl(276, 55%, 52%)
-    - Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
-    - Grayish Blue (placeholder text): hsl(206, 6%, 79%)
-    - Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
-    - Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
-    
-    #### Gradients
-    
-    - Light Magenta: hsl(293, 100%, 63%)
-    - Light Violet: hsl(264, 100%, 61%)
-    
-    ### Secondary
-    
-    - White: hsl(0, 0%, 100%)
-    - Light Grayish Violet (app background): hsl(270, 20%, 96%)
-    - Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
-    - Very Light Magenta (radio button outline): hsl(289, 100%, 72%) */
 }
 
 body {
@@ -45,6 +26,7 @@ body {
     overflow: hidden;
     background-color: var(--light-grayish-violet);
     overflow-y: auto;
+    overflow-x: auto;
 }
 
 .container {
@@ -273,7 +255,7 @@ body {
     line-height: 1.4;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 0px) and (max-width: 500px) {
     .container {
         flex-direction: column;
     }
@@ -289,11 +271,32 @@ body {
         position: absolute;
         right: 0%;
         top: 20%;
-        left: 30%;
+        left: 20%;
     }
 
     .container .explanation {
         transform: translate(0, 0px);
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px)  {
+    body {
+        overflow-y: auto;
+        overflow-y: hidden;
+    }
+    .container .design {
+        width: 65vw;
+    }
+
+    .container .phone-design {
+        position: absolute;
+        right: 0%;
+        top: 20%;
+        left: 40%;
+    }
+
+    .container .explanation {
+        transform: translate(200px, 0);
     }
 }
 
